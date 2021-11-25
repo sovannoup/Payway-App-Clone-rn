@@ -102,7 +102,7 @@ export default class FtCode extends Component {
         </View>
         {Page == 'term' && (
           <>
-            <View style={styles.body}>
+            <ScrollView style={styles.body}>
               <View style={styles.genCon}>
                 <Text style={styles.genHeadText}>
                   General Terms & Conditions and Merchant Agreement
@@ -178,7 +178,7 @@ export default class FtCode extends Component {
                   <Text style={styles.iHave}>I agree to all of the above.</Text>
                 </View>
               </View>
-            </View>
+            </ScrollView>
             <View style={styles.footer}>
               <TouchableOpacity
                 disabled={!third}
@@ -268,7 +268,7 @@ const styles = StyleSheet.create({
 
   // Term and Accept
   userAccept: {
-    marginTop: '70%',
+    marginTop: '30%',
   },
   bCheckBox: {
     flexWrap: 'wrap',
@@ -313,7 +313,6 @@ const styles = StyleSheet.create({
 
   //footer
   footer: {
-    position: 'absolute',
     bottom: 0,
     width: '100%',
     borderTopWidth: 0.2,
